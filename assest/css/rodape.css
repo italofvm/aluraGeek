@@ -1,0 +1,128 @@
+footer {
+  background-color: #eaf2fd;
+}
+.rodape {
+  color: var(--cor-cinza-escuro);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.rodape__contato {
+  display: flex;
+  align-items: flex-start;
+}
+
+.rodape__imagem {
+  padding-right: 5rem;
+  height: auto;
+}
+
+.rodape__links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.rodape__link {
+  color: var(--cor-cinza-escuro);
+  text-decoration: none;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 5rem;
+}
+
+.rodape__link:hover {
+  text-decoration: underline;
+}
+
+.rodape__titles {
+  flex-grow: 1;
+  margin-left: 2rem;
+}
+
+.rodape__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.rodape__input {
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  outline: none;
+}
+
+.rodape__input:hover {
+  border-bottom: 2px solid var(--cor-azul);
+}
+.rodape__text {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+.rodape__text:hover {
+  border-bottom: 2px solid var(--cor-azul);
+}
+
+.rodape__btn {
+  width: 11rem;
+  color: var(--cor-branca);
+  background-color: var(--cor-azul);
+  border: none;
+  cursor: pointer;
+}
+
+.rodape__btn:hover {
+  background-color: var(--cor-branca);
+  color: var(--cor-azul);
+  border: 1px solid var(--cor-azul);
+}
+
+.rodape__btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.rodape__copy {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--cor-branca);
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  .rodape{
+    max-width: 700px;
+  }
+  
+  .rodape__contato {
+    flex-direction: column;
+  }
+
+  .rodape__imagem {
+    padding-bottom: 10px;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 480px) {
+  .rodape{
+    flex-direction: column;
+    max-width: 400px;
+  }
+
+  .rodape__titles {
+    margin: 0;
+  }
+}
