@@ -2,24 +2,24 @@ footer {
   background-color: #eaf2fd;
 }
 .rodape {
+  align-items: flex-start;
   color: var(--cor-cinza-escuro);
+  display: flex;
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   margin-bottom: 1.5rem;
+  padding: 60px 0;
 }
 
 .rodape__contato {
-  display: flex;
   align-items: flex-start;
+  display: flex;
 }
 
 .rodape__imagem {
-  padding-right: 5rem;
   height: auto;
+  padding-right: 5rem;
 }
 
 .rodape__links {
@@ -31,10 +31,10 @@ footer {
 
 .rodape__link {
   color: var(--cor-cinza-escuro);
-  text-decoration: none;
   font-size: 1rem;
   padding-bottom: 1rem;
   padding-right: 5rem;
+  text-decoration: none;
 }
 
 .rodape__link:hover {
@@ -52,23 +52,23 @@ footer {
 }
 
 .rodape__input {
-  width: 100%;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
   border: none;
+  width: 100%;
+  margin-bottom: 1rem;
   outline: none;
+  padding: 1.5rem;
 }
 
 .rodape__input:hover {
   border-bottom: 2px solid var(--cor-azul);
 }
 .rodape__text {
+  border: none;
   width: 100%;
-  padding: 0.5rem;
   margin-bottom: 1rem;
   resize: none;
-  border: none;
   outline: none;
+  padding: 0.5rem;
 }
 
 .rodape__text:hover {
@@ -76,28 +76,28 @@ footer {
 }
 
 .rodape__btn {
-  width: 11rem;
-  color: var(--cor-branca);
-  background-color: var(--cor-azul);
   border: none;
+  background-color: var(--cor-azul);
+  color: var(--cor-branca);
   cursor: pointer;
+  width: 11rem;
 }
 
 .rodape__btn:hover {
+  border: 1px solid var(--cor-azul);
   background-color: var(--cor-branca);
   color: var(--cor-azul);
-  border: 1px solid var(--cor-azul);
 }
 
 .rodape__btn:focus {
-  outline: none;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  outline: none;
 }
 
 .rodape__copy {
+  background-color: var(--cor-branca);
   text-align: center;
   padding: 1.5rem;
-  background-color: var(--cor-branca);
 }
 
 /*Tablet*/

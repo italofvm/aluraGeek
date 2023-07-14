@@ -3,14 +3,14 @@
 }
 
 .banner {
+  align-items: center;
+  color: var(--cor-branca);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  left: 50%;
   max-width: 1200px;
   margin: 0 auto;
-  color: var(--cor-branca);
   position: absolute;
-  left: 50%;
   top: 65%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -18,16 +18,16 @@
 
 .banner__img {
   background: url(../../assest/img/banner.png) no-repeat center / cover;
-  width: 100%;
   filter: blur(1px);
   height: calc(50vh - 51px);
+  width: 100%;
 }
 
 .banner__title {
   font-size: 3.25rem;
-  padding-bottom: 1rem;
   text-align: left;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding-bottom: 1rem;
 }
 
 .banner__subtitle {
@@ -39,11 +39,11 @@
 }
 
 .banner__btn {
-  color: var(--cor-branca);
   background-color: var(--cor-azul);
-  width: 10rem;
+  color: var(--cor-branca);
   transition: all 0.3s;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 10rem;
 }
 
 .banner__btn:hover {
@@ -63,13 +63,13 @@
 
 /*Mobile*/
 @media (max-width: 480px) {
-
   .banner {
     top: 70%;
   }
+
   .banner__img {
+    height: calc(40vh - 55px);
     width: 100%;
-    height: calc(35vh - 50px);
   }
 
   .banner__title {
