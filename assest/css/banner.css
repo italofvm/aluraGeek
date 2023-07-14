@@ -43,7 +43,7 @@
   color: var(--cor-branca);
   transition: all 0.3s;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  width: 10rem;
+  width: 100%;
 }
 
 .banner__btn:hover {
