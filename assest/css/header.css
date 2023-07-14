@@ -64,12 +64,17 @@
     width: 11rem;
   }
   .menu__nav{
+    display: none;
     flex-direction: column;
   }
   .menu__search{
     padding: 15px;
   }
   #burguer {
+  display: flex;
+}
+
+.menu__nav__login {
   display: flex;
 }
 }
