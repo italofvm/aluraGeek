@@ -63,18 +63,20 @@
   .menu__img {
     width: 11rem;
   }
-  .menu__nav{
+  .menu__nav {
     display: none;
     flex-direction: column;
   }
-  .menu__search{
+  .menu__search {
     padding: 15px;
   }
   #burguer {
-  display: flex;
-}
+    background: var(--cor-cinza-claro);
+    display: block;
+    font-size: 2.5rem;
+  }
 
-.menu__nav__login {
-  display: flex;
-}
+  .menu__nav__login {
+    display: flex;
+  }
 }
