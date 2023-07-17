@@ -2,41 +2,51 @@
   color: var(--cor-cinza-escuro);
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding-top: 1.5rem;
 }
 
 .produto {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 0.5rem;
-  padding: 10px 0;
+  gap: 0.2rem;
   text-align: center;
 }
 
 .produtos__title {
-  align-items: center;
   display: flex;
   justify-content: space-between;
+  text-align: center;
+}
+
+.produtos__title h1 {
+  font-size: 2rem;
 }
 
 .produto__card {
+  border-radius: 2%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 3rem;
   text-align: start;
-  padding-bottom: 4rem;
+  width: 12rem;
 }
 
 .produto__img {
   height: auto;
   margin-bottom: 0.5rem;
-  width: 180px;
+  transition: transform 0.3s ease;
+}
+
+.produto__img:hover {
+  transform: scale(1.1);
 }
 
 .produtos a {
   color: var(--cor-azul);
   font-weight: bold;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .produtos h2 {
@@ -47,30 +57,54 @@
 .btn__adicionar__produto {
   padding: 1rem;
   width: 100%;
-  background: var(--cor-azul) ;
+  background: var(--cor-azul);
   color: var(--cor-branca);
   transition: all 0.3s;
 }
 
-.btn__adicionar__produto:hover{
+.btn__adicionar__produto:hover {
   background: var(--cor-branca);
   color: var(--cor-azul);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .produtos {
-    max-width: 700px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 1rem;
+  }
+
+  .produtos__title h1 {
+    flex-direction: column;
+    font-size: 1.5rem;
   }
 
   .btn__adicionar__produto {
-  padding: 1rem;
-  width: 100%;
-}
+    padding: 1rem;
+    width: 100%;
+  }
 }
 
-/*Mobile*/
-@media (max-width: 480px) {
-  .produtos {
-    max-width: 400px;
+@media screen and (max-width: 420px) {
+  .produtos__title{
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .produtos__title h1 {
+    font-size: 1.3rem;
+  }
+
+  .produto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+.produto__card {
+  align-items: center;
+}
+
+  .btn__adicionar__produto {
+    padding: .5rem;
+    width: 50%;
   }
 }

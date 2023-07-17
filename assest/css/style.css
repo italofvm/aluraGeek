@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
-
-* {
-  box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
 :root {
   --cor-azul: #2a7ae4;
   --cor-branca: #fff;
@@ -26,6 +17,7 @@
   font-weight: 400;
   padding: .9rem 4rem;
   transition: all 0.3s;
+  text-align: center;
   width: 100%;
 }
 
@@ -40,14 +32,8 @@
   color: var(--cor-cinza-escuro);
   display: inline-block;
   font-size: 1rem;
-  padding: 0.8rem 1rem;
   outline: none;
-  width: 22rem;
-}
-
-/*Tablet*/
-@media (max-width: 768px) {
-  .input {
-    width: 20rem;
-  }
+  padding: 0.8rem 1rem;
+  text-align: start;
+  width: 100%;
 }

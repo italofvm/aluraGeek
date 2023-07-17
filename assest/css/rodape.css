@@ -80,7 +80,7 @@ footer {
   background-color: var(--cor-azul);
   color: var(--cor-branca);
   cursor: pointer;
-  width: 11rem;
+  width: 50%;
 }
 
 .rodape__btn:hover {
@@ -101,9 +101,11 @@ footer {
 }
 
 /*Tablet*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .rodape{
-    max-width: 700px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 10px;
   }
   
   .rodape__contato {
@@ -113,16 +115,13 @@ footer {
   .rodape__imagem {
     padding-bottom: 10px;
   }
-}
-
-/*Mobile*/
-@media (max-width: 480px) {
-  .rodape{
-    flex-direction: column;
-    max-width: 400px;
-  }
-
   .rodape__titles {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .rodape__btn{
+    width: 100%;
   }
 }
